@@ -1,0 +1,173 @@
+html {
+    margin-top: 66px;
+}
+
+body {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 0 0 .4rem;
+    /* line-height: 1.4rem; */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* ..........................................................................................  */
+
+.texts {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 20px;
+    line-height: 1.6rem;
+    overflow: auto;
+}
+
+.card {
+    border-radius: 10px;
+
+    margin: 15px 15px 0;  /* 왜 마진상쇄가 안되는걸까? -> id="card1", id="card2" 이렇게 맨 위 div에 둘 다 줘도 상쇄가 안됐음 -> 일단 bottom: 0;으로. */
+}
+
+.card-body {
+    padding: auto 10px;
+}
+
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+
+.contents-flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.imgs1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.imgs1 img {
+    margin: 3px;
+}
+
+
+/* ##########################################################################################  */
+
+#nab {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    border-bottom: 0.1rem solid grey;
+}
+
+#nab img {
+    height: 40px;
+    width: 40px;
+}
+
+#todoist-flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+
+#todoist-first-flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+#card1 {
+    width: 95%;
+    background-color: rgb(235, 235, 235);
+}   
+
+#card1.flexbox {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#card1 h2 {
+    margin: 0;
+}
+
+#card2 .texts {
+
+    width: 70%;
+    color: lightgray;
+}
+
+#card2 .img {
+    width: 280px;
+    padding: 10px;
+}
+
+#card2 .img img {
+    /* width: 100%; */
+    height: auto;
+}
+
+
+#why {
+    width: 450px;
+    font-size: 23px;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2.1rem;
+}
+
+
+/* #card1 .texts {
+    width: 70%;
+} */
+
+/* #card1 .img {
+    width: 280px;
+    padding: 10px;
+} */
+/* 
+#card1 .img img {
+    width: 100%;
+    height: auto;
+} */
+
+#first p, #second p {
+    margin: 0.2rem;
+}
